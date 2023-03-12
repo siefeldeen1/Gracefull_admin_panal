@@ -1,0 +1,55 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url('./GreatVibes-Wmr4.ttf')
+  }
+
+
+
+.side_bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 15vw;
+    height: 100vh;
+    padding: 20px;
+    border-right:solid black 1px;
+}
+
+.side_bar_group{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    flex-direction: column;
+    gap: 15px;
+}
+
+.icons_dev{
+    display: flex;
+    align-items: flex-end;
+    gap: 17px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.nav_icons{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hr_class{
+width: 100%;
+border-color: #ffffff30;
+}
+
+.logo_text{
+    font-weight: 600;
+    font-size: 50px;
+    font-family: 'myFirstFont';
+
+}
+
+.icons_text{
+    font-weight: 450;
+    font-size: 16px;
+}
