@@ -1,7 +1,6 @@
 import React from 'react'
 import { Navigate, useRoutes } from 'react-router-dom';
-import Home_page from './pages/home_page/home_page';
-
+import Home_page from './pages/home_page/Home_page';
 
 export default function Router() {
   return useRoutes([
