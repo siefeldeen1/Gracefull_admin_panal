@@ -5,6 +5,7 @@ import Sidebar from '../sidebar/Sidebar'
 import Welcome from './overview_widgeits/welcome_widgets/Welcome'
 import Info_widgits from './overview_widgeits/info_widgits/Info_widgits'
 import Grid_widgits from './overview_widgeits/grids_Widgits/Grid_widgits'
+import Table from './overview_widgeits/table/Table'
 
 function Home_page() {
   return (
@@ -15,6 +16,7 @@ function Home_page() {
       <Welcome/>
       <Info_widgits/>
       <Grid_widgits/>
+      <Table/>
       </div>
 
     </div>

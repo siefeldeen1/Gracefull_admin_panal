@@ -26,8 +26,9 @@
 
 
 .chart_title{
-    font-weight: 600;
+    font-weight: 700;
     font-size: 16px;
+    color: #1b1a1a;
 }
 
 .charts_div_cont{
@@ -64,6 +65,7 @@
     font-weight: 500;
     cursor: pointer;
     transition: 0.4s;
+    margin-right: 20px;
 }
 
 .view_more_chart:hover{
