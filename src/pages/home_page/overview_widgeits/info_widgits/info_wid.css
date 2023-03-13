@@ -13,8 +13,28 @@
     justify-content: start;
     padding: 20px;
     gap: 10px;
+   cursor: pointer;
+   transition: 0.8s;
 }
 
+.widgit_for_info:first-child{
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.widgit_for_info:last-child{
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.widgit_for_info:hover{
+    animation: mymove 2s ease-in;
+    background-color: #caec64;
+}
+
+@keyframes mymove {
+    from {background-color: white;}
+    to {background-color: #caec64;}
+  }
 .top_part_of_info{
     display: flex;
     align-items: center;

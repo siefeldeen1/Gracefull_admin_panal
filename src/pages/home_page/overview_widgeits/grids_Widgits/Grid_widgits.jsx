@@ -1,8 +1,13 @@
 import React from 'react'
-import { Line } from 'react-chartjs-2';
-import { Chart, LineController, LineElement, PointElement, LinearScale, Title,CategoryScale } from 'chart.js';
+import { Line,Doughnut } from 'react-chartjs-2';
+import {  LineController, LineElement, PointElement, LinearScale, Title,CategoryScale } from 'chart.js';
+import './Grid_widgets.css'
+import Chart from 'chart.js/auto';
+import { HiArrowRight } from 'react-icons/hi';
+Chart.register(LineController, LineElement, PointElement, LinearScale, Title, CategoryScale,);
 
-Chart.register(LineController, LineElement, PointElement, LinearScale, Title, CategoryScale);
+
+
 function Grid_widgits() {
 
 
@@ -16,45 +21,58 @@ function Grid_widgits() {
         {
           label: 'Revenue',
           data: NUMBER_CFG,
-          borderColor: "blue",
-          backgroundColor: "blue",
+          borderColor: "#83979C",
+          backgroundColor: "#83979C",
           yAxisID: 'y',
         },
         {
           label: 'Orders',
           data: NUMBER_CFG,
-          borderColor: "green",
-          backgroundColor: "green",
+          borderColor: "#D0F569",
+          backgroundColor: "#D0F569",
           yAxisID: 'y1',
         }
       ]
     };
- 
+
       
         const options = {
           responsive: true,
           interaction: {
-       
-            intersect: true,
+            mode: 'index',
+            intersect: false,
           },
           stacked: false,
           plugins: {
             title: {
               display: true,
            
-            }
+            },
+            legend: {
+              display: false,}
           },
           scales: {
             y: {
-            
+                type: 'linear',
+              beginAtZero: true,
               display: true,
-              position: 'left',
+              position: 'left',   
+                ticks: {
+               
+                callback: function(value, index) {
+               
+                
+                  if ( value < 2) return value *10;
+                  else return value ; 
+               }
+              },
+             
             },
             y1: {
-       
-              display: true,
-              position: 'right',
-      
+              type: 'linear',
+              display: false,
+              position: 'left',
+              beginAtZero: true,
               // grid line settings
               grid: {
                 drawOnChartArea: false, // only want the grid lines for one axis to show up
@@ -63,12 +81,50 @@ function Grid_widgits() {
           }
         }
       
+        const doughnut_data = {
+          labels: [
+            
+            // 'Red',
+            // 'Blue',
+            // 'Yellow'
+          ],
+          datasets: [{
+            // label: 'My First Dataset',
+            data: [1, 0],
+            backgroundColor: [
+              'black',
+              'red',
+             
+            ],
+            hoverOffset: 4
+          }]
+        };
+
+        const doughnut_options = {
+          responsive: true,
+          maintainAspectRatio: true,
+          plugins: {
+            legend: {
+              position: 'bottom',
+              align :"center" ,
+            
+              ltr : false,
+              labels: {
+       
+                usePointStyle: true,
+                pointStyle: 'circle',
+                // padding: 20,
+              
+              }
+            }
+          }, 
+      }
 
   return (
-    <div>
+    <div className='charts_div_cont'>
         <div className='line_chart'>
             <div className='line_chart_header'>
-                <div>Revenue vs Orders</div>
+                <div className='chart_title'>Revenue vs Orders</div>
 
                 <div className='otherside_line_header'>
 
@@ -78,7 +134,7 @@ function Grid_widgits() {
                     </div>
 
                     <div className='legend_line_bar'>
-                        <div className='circle'></div>
+                        <div className='circle' style={{backgroundColor:"#D0F569"}}></div>
                         <div>Orders</div>
                     </div>
                 
@@ -88,6 +144,13 @@ function Grid_widgits() {
             <Line data={data} options={options} />
 
         </div>
+
+      <div className='dounut_chart'>
+        <div className='chart_title'>Sales by category</div>
+        <Doughnut className='chart_dev' data={doughnut_data} options={doughnut_options}/>
+        <div className='number_of_money'>$0</div>
+        <div className='view_more_chart'>View more details <HiArrowRight/></div>
+      </div>
     </div>
   )
 }

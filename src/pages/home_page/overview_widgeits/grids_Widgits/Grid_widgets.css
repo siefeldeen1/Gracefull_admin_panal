@@ -1,0 +1,71 @@
+.line_chart_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.otherside_line_header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.legend_line_bar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.circle{
+    width: 10px;
+    height: 10px;
+    background-color: #83979C;
+    border-radius: 50%;
+}
+
+
+.chart_title{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.charts_div_cont{
+    display: grid;
+    grid-template-columns:70% 30%;
+    gap: 20px;
+}
+
+.chart_dev{
+    width: 70%;
+    height: 70%;
+}
+
+.number_of_money{
+    position: absolute;
+    font-weight: 700;
+    font-size: 32px;
+    top: 43%;
+    left: 43%;
+}
+.dounut_chart{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+    
+}
+
+.view_more_chart{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.view_more_chart:hover{
+    opacity: 0.7;
+}
