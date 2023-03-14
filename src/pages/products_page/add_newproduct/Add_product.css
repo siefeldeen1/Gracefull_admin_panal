@@ -1,0 +1,30 @@
+.form_cont{
+    display: flex;
+    flex-direction: column;
+    width: 82%;
+    margin: 0 auto;
+}
+
+.upload_img_cont{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.upload_cont{
+    width: 70%;
+    height: 40%;
+    margin: 0 auto;
+    background-color: rgb(237 236 234);
+    border: 1px solid #d9d3d3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.input_files{
+    visibility: hidden;
+}

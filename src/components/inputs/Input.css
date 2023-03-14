@@ -1,0 +1,12 @@
+.cont_input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input_class{
+    padding: 10px 13px;
+    width: 100%;
+    outline: none;
+    border: 1px solid black;
+}

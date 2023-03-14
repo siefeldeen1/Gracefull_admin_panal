@@ -1,0 +1,36 @@
+.nothing_big_cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+
+.nothing_title{
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.nothing_subtitle{
+    font-weight: 400;
+    color: rgb(0 0 0 / 84%);
+}
+
+.nothing_create_btn{
+    margin-top: 10px;
+    border-radius: 7px;
+    background: linear-gradient(90deg, #BF7FFF 0%, #38d0eb 100%);
+    border: none;
+    outline: none;
+    padding: 10px  15px;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.nothing_create_btn:hover{
+opacity: 0.8;
+}
