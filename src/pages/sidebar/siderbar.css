@@ -10,9 +10,9 @@
     flex-direction: column;
     justify-content: space-between;
     width: 15vw;
-    height: 100vh;
+    /* height: 100%; */
     padding: 20px;
-    border-right:solid black 1px;
+    border-right:solid rgba(175, 175, 175, 0.493) 1px;
 }
 
 .side_bar_group{
@@ -34,7 +34,8 @@
 .nav_icons{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 35px;
+    
 }
 
 .hr_class{
@@ -50,6 +51,6 @@ border-color: #ffffff30;
 }
 
 .icons_text{
-    font-weight: 450;
+    font-weight: 500;
     font-size: 16px;
 }
