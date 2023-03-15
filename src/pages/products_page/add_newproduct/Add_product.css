@@ -3,6 +3,8 @@
     flex-direction: column;
     width: 82%;
     margin: 0 auto;
+    gap: 15px;
+    margin-top: 10px;
 }
 
 .upload_img_cont{

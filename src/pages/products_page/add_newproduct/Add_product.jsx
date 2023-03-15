@@ -40,7 +40,7 @@ function Add_product() {
 
             <div className='form_cont'>
                 <div className='upload_img_cont'>
-                    <h2>Upload your product image</h2>
+                    <h2 style={{marginLeft:"1.5%"}}>Upload your product image</h2>
                 
                     <div className='upload_cont' onClick={click_changer}>
                         <div className='upload_title'>Upload image</div>
