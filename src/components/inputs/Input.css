@@ -6,7 +6,7 @@
 
 .input_class{
     padding: 10px 13px;
-    width: 100%;
+    /* width: 100%; */
     outline: none;
     border: 1px solid black;
 }
