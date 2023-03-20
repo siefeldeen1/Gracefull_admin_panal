@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    position: relative;
 }
 
 .input_class{
@@ -11,9 +12,42 @@
     border: 1px solid black;
 }
 
+
+.input2_big_div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .input_class2{
-    padding: 10px 13px;
+    border: none;
+    outline: none;
+    padding: 10px 3px;
     /* width: 100%; */
     outline: none;
-    border: 1px solid black;
+    border-bottom: 1px solid rgb(0 0 0 / 22%);
+    
 }
+
+
+.input_class2:focus+.underline {
+    transform: scale(1);
+  }
+  
+  .underline {
+    background-color: dodgerblue;
+    display: inline-block;
+    height: 2px;
+    left: 0;
+    
+    /* margin-top: -4px; */
+    position: absolute;
+    bottom: 0px;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    width: 100%;
+  } 
+
+  

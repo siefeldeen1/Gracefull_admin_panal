@@ -13,6 +13,7 @@ export default function Router() {
     {path: '/Products/add_product', element:  <Add_product/> },
     {path: '/Login', element:  <Login/> },
     {path: '/SignUp', element:  <Signup/> },
+
     ])
 
 }
