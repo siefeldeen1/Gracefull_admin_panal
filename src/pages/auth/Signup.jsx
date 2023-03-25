@@ -47,7 +47,7 @@ function Test_sign() {
 
     <div className='test_signup_body'>
         
-        <form onSubmit={(e)=>{e.preventDefault()}} className='form_class'>
+        <form onSubmit={(e)=>{e.preventDefault();submit()}} className='form_class'>
         <div className='upper_part_signip_page'>
                 <button className='login_google' onClick={google}>
                     <div class="lock">
@@ -74,7 +74,7 @@ function Test_sign() {
                 </div>
 
             <div className='btn_cont_signup'>
-              <button type="" className='signup_btn_class' onClick={submit} >Sign Up</button>
+              <button type="submit" className='signup_btn_class'  >Sign Up</button>
               </div>
         </form>
       

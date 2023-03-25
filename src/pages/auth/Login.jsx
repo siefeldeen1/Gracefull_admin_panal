@@ -16,6 +16,8 @@ function Login() {
     const [confri_vaild, setconfri_vaild] = useState(true)
     const [email_vaild, setemail_vaild] = useState(true)
     const [btn_vaild, setbtn_vaild] = useState(false)
+    const [popup_error, setpopup_error] = useState(false)
+
 
     const change=()=>{
         if((email.includes('@'))&&(email.includes('.'))){
@@ -44,7 +46,7 @@ function Login() {
             if(res.status ==200 ){
                 navigate("/")
             }else{
-
+                setpopup_error(true)
             }
         
         })
@@ -57,7 +59,10 @@ function Login() {
     
     return (
       <div className='big_cont_background'> 
-        <Popup/>
+      {popup_error&&
+         <Popup closepop={()=>{setpopup_error(false)}}/>
+      }
+       
       <div className='test_signup_body'>
           
           <form onSubmit={(e)=>{e.preventDefault();submit()}} className='form_class'>

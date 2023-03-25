@@ -26,6 +26,32 @@
     padding: 10px;
     cursor: pointer;
     transition: 0.4s;
+    position: relative;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.uploaded_img_cont{
+    width: 70%;
+    height: 50vh;
+    margin: 0 auto;
+    background-color: rgb(237 236 234);
+    border: 1px solid #d9d3d3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* padding: 10px; */
+    cursor: pointer;
+    transition: 0.4s;
+    position: relative;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 .input_files{
     visibility: hidden;
@@ -45,13 +71,28 @@
     gap: 20px;
     padding-bottom: 20px;
 }
+
+.text_area_label{
+    font-weight: 500;
+}
+
+
 .text_area_for_discribtion{
     width: 98%;
     margin: 0 auto;
     resize: none;
     outline: none;
     padding: 1%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    transition: .3s;
 }
+
+.text_area_for_discribtion:focus,.text_area_for_discribtion:hover,.text_area_for_discribtion:active{
+    border: 2px solid #0E8388;
+}
+
 
 .text_area_class{
     display: flex;
@@ -65,16 +106,65 @@
     background-color: transparent;
     padding: 10px 15px;
     color: black;
-    border-radius: 3px;
+    border-radius: 6px;
     width: 60%;
     margin: 0 auto;
     cursor: pointer;
     font-size: 16px;
     font-weight: 500;
     transition: 0.4s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .add_prod_btn_class:hover{
     background-color: black;
     color: white;
 }
+
+.img_preview{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.img_cont{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: none;
+}
+.img_cont2{
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+.button_close{
+    width: fit-content;
+    height: fit-content;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 99;
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: rgba(255, 0, 0, 0.719);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 3px;
+
+}
+
+.button_close:hover{
+    opacity: 0.6;
+}
+
+.upload_title{
+    font-weight: 500;
+
+}
+
